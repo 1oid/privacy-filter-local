@@ -592,7 +592,7 @@ def main(argv: Sequence[str] | None = None, *, prog: str | None = None) -> int:
 
     # Default to Triton-backed MoE kernels on non-CPU devices unless callers
     # explicitly opt out. CPU uses torch ops by default so Triton stays optional.
-    if device.type != "cpu"
+    if device.type != "cpu":
         os.environ.setdefault("OPF_MOE_TRITON", "1")
 
     base_config = _load_checkpoint_config(checkpoint)
