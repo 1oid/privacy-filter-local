@@ -4,7 +4,7 @@ WORKDIR /app
 
 RUN pip3 install -U "huggingface_hub"
 
-RUN hf download openai/privacy-filter /root/.opf/privacy_filter
+RUN hf download openai/privacy-filter --local-dir /root/.opf/privacy_filter
 
 COPY . .
 
