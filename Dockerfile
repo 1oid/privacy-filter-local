@@ -10,7 +10,7 @@ RUN hf download openai/privacy-filter --local-dir /root/.opf/privacy_filter
 
 COPY . .
 
-RUN pip3 install -e .
+RUN pip3 install --ignore-installed -e .
 
 RUN chmod +x start.sh
 
