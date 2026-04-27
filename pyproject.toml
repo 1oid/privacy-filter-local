@@ -15,6 +15,7 @@ dependencies = [
   "torch",
   "safetensors",
   "tiktoken",
+  "flask",
 ]
 
 [project.scripts]
