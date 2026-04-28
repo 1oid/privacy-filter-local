@@ -16,6 +16,7 @@ dependencies = [
   "safetensors",
   "tiktoken",
   "flask",
+  "runpod",
 ]
 
 [project.scripts]

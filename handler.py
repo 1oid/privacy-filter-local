@@ -32,3 +32,5 @@ def handler(event):
         "status": 200,
         "message": "success"
     }
+
+runpod.serverless.start({"handler": handler})
