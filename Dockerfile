@@ -2,7 +2,7 @@ FROM pytorch/pytorch:2.11.0-cuda13.0-cudnn9-devel
 
 WORKDIR /app
 
-RUN apt update && apt install -y git wget curl python3-xyz
+RUN apt update && apt install -y git wget curl
 
 RUN pip3 install -U "huggingface_hub"
 
